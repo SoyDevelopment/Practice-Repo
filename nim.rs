@@ -5,9 +5,9 @@ struct Deck {
 impl Deck {
     fn new() -> Deck {
         let mut cards = Vec::new();
-        for _x in 1..10 { 
-            for i in 0..3{
-                cards.push(i)
+        for x in 0..4 { 
+            for _i in 0..10{
+                cards.push(x)
             }
         }
         Deck { stack: cards }
