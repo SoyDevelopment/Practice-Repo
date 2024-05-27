@@ -1,30 +1,24 @@
 import random
 
 class Card:
-    def __init__(self, value: int):
+    def __init__(self, value: int) -> None:
         self.value = value
     
 
 class Deck:
-    def __init__(self, stack: list[Card]):
+    def __init__(self, stack: list[Card]) -> None:
         self.stack = []
 
     def shuffle_deck (self) -> list[Card]:
         return random.shuffle(self.stack)
     
     def draw_top_card(self) -> list[Card]:
-        drawn_card = [self.stack[0]]
+        drawn_card : Card = [self.stack[0]]
         del self.stack[0]
         return drawn_card
-
-# User profile
-# class UserProfile(Account):
-#     owner: Pubkey
-#     hand: list[Card]
-
 # Player Profile
 class Player:
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         self.name = name
         self.hand : list[Card] = []
     
@@ -57,7 +51,7 @@ def init_deck() -> Deck:
     return output
 
 class Game:
-    def __init__(self, deck : Deck, players : list[Player]):
+    def __init__(self, deck : Deck, players : list[Player]) -> None:
         self.deck = init_deck()
         self.players = players
         self.pot : int = 0
@@ -69,7 +63,7 @@ class Game:
     def refreshDeck(self) -> None:
         self.deck = init_deck()
     
-    def player_draw_card(self, player : Player):
+    def player_draw_card(self, player : Player) -> None:
         player.add_to_hand(self.deck.draw_top_card())
     
     def add_to_pot (self, card : Card) -> None:
