@@ -1,28 +1,27 @@
 use rand::seq::SliceRandom;
-extern crate rand;
 
 #[derive(Debug)]
 struct Card {
-    value: i8
+    value: i8,
 }
 
 impl Card {
     fn new(num: i8) -> Card {
-        Card{value: num}
+        Card { value: num }
     }
 }
 
 #[derive(Debug)]
 struct Deck {
-    stack: Vec<Card>
+    stack: Vec<Card>,
 }
 
 impl Deck {
     fn new() -> Deck {
         let mut cards = Vec::new();
-        for x in 0..4 { 
-            for _i in 0..10{
-                let new_card = Card::new(x);
+        for suit in 0..4 {
+            for _value in 0..10 {
+                let new_card = Card::new(suit);
                 cards.push(new_card);
             }
         }
@@ -32,12 +31,19 @@ impl Deck {
     fn shuffle(&mut self) {
         self.stack.shuffle(&mut rand::thread_rng());
     }
+
+    fn draw(&mut self) -> Option<Card> {
+        self.stack.pop()
+    }
 }
 
 fn main() {
-    let mut deck: Deck = Deck::new();
+    let mut deck = Deck::new();
     deck.shuffle();
-    for card in deck.stack.iter() {
+
+    while let Some(card) = deck.draw() {
         println!("Card: {:?}", card);
     }
+
+    println!("Deck is empty!");
 }
