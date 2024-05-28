@@ -20,7 +20,7 @@ impl Deck {
     fn new() -> Deck {
         let mut cards = Vec::new();
         for suit in 0..4 {
-            for _value in 0..10 {
+            for _ in 0..10 {
                 let new_card = Card::new(suit);
                 cards.push(new_card);
             }
