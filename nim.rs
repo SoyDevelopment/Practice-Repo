@@ -1,5 +1,17 @@
+#[derive(Debug)]
+struct Card {
+    value: i8
+}
+
+impl Card {
+    fn new(num: i8) -> Card {
+        Card{value: num}
+    }
+}
+
+#[derive(Debug)]
 struct Deck {
-    stack: Vec<i8>
+    stack: Vec<Card>
 }
 
 impl Deck {
@@ -7,7 +19,8 @@ impl Deck {
         let mut cards = Vec::new();
         for x in 0..4 { 
             for _i in 0..10{
-                cards.push(x)
+                let new_card = Card::new(x);
+                cards.push(new_card);
             }
         }
         Deck { stack: cards }
@@ -17,6 +30,6 @@ impl Deck {
 fn main() {
     let deck: Deck = Deck::new();
     for x in deck.stack.iter() {
-        println!("Card: {:?}", x)
+        println!("Card: {:?}", x);
     }
 }

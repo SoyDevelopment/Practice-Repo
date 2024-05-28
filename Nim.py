@@ -16,7 +16,7 @@ class Deck:
         drawn_card : Card = [self.stack[0]]
         del self.stack[0]
         return drawn_card
-# Player Profile
+        
 class Player:
     def __init__(self, name: str) -> None:
         self.name = name
@@ -92,7 +92,7 @@ Geo = Player('Geo')
 Katy = Player('Katy')
 Niko = Player('Niko')
 
-loop = Game(init_deck(),[Emerson,Geo, Katy, Niko])
+loop = Game(init_deck(),[Emerson, Geo, Katy, Niko])
 
 loop.RUN_GAME()
 
