@@ -1,0 +1,365 @@
+[
+    {
+        "Corporation":
+            {
+                "Code": "MQS",
+                "Info":"Email all insurance issues to Eddie @ Eddie.Hirsch@cedarthing.com",
+                "Facilities":
+                [
+                    {
+                        "Name": "Woodbine",
+                        "Number": "318",
+                        "Code": "WOODB",
+                        "Info": "PCC for their MAR",
+                        "Contacts": [
+                            {
+                                "Name": "Main Number",
+                                "Number": "7032345678"
+                            },
+                            {
+                                "Name": "Justine - DON",
+                                "Number": "7032345678"
+                            }
+                        ],
+                        "OTCs": 
+                            [
+                                "ACETAMINOPHEN 325 MG TABLET",
+                                "ACETAMINOPHEN 500 MG TABLET",
+                                "ACIDOPHILUS CAPSULE",
+                                "LIDOCAINE 4% PATCH",
+                                "ASPIRIN 81 MG CHEWABLE TABLET",
+                                "ASPIRIN EC 81 MG TABLET",
+                                "BISACODYL 10 MG SUPPOSITORY",
+                                "CEROVITE TAB",
+                                "CETIRIZINE HCL 10 MG TABLET",
+                                "ACETAMINOPHEN 160 MG/5 ML",
+                                "CULTURELLE CAPSULES",
+                                "DOCUSATE 100 MG SOFTGEL",
+                                "FAMOTIDINE 20 MG TAB",
+                                "H-CHLOR 12 0.125% SOLUTION",
+                                "IRON 65 MG TABLET",
+                                "VITAMIN C 500 MG/5 ML LIQUID",
+                                "LORATADINE 10 MG TABLET",
+                                "M-PAP 160 MG/5 ML LIQUID",
+                                "MAGNESIUM OXIDE 400 MG TABLET",
+                                "MELATONIN 3 MG TABLET",
+                                "Mucinex 600MG ER TABELT",
+                                "MULTIVIT-MINERALS TABLET",
+                                "MULTIVITAMIN TABLET",
+                                "POLYETHYLENE GLYCOL 3350",
+                                "Calazime Paste",
+                                "RENA-VITE TABLET",
+                                "RISAQUAD 8 BILLION CFU CAPSULE",
+                                "GUAIFENACIN 100 MG/5 ML SYRUP",
+                                "SODIUM BICARB 650 MG TABLET",
+                                "SODIUM CHLORIDE 1 GM TABLET",
+                                "SENNA PLUS TABLET",
+                                "SENNA 8.6MG TABLET",
+                                "THEREMS TABLET",
+                                "VITAMIN B-1 100 MG TABLET",
+                                "VITAMIN B-12 1,000 MCG TABLET",
+                                "VITAMIN C 500 MG TABLET",
+                                "VITAMIN D3 1,000U SOFTGEL",
+                                "VITAMIN D3 1000U (25MCG) TABLET",
+                                "VITAMIN D3 2,000 UNIT TABLET",
+                                "VITRON-C",
+                                "ZINC SULFATE 220 MG CAPSULE",
+                                "ZINC SULFATE 220 MG TABLET"
+                            ],
+                        "POS": 
+                            [
+                                "As400 Price is Not acceptable"
+                            ]
+                    },
+                    {
+                        "Name": "Alexandria",
+                        "Number": "317",
+                        "Code": "ALEXA",
+                        "Info": "IVs Exist",
+                        "Contacts": 
+                            [
+                                {
+                                    "Name": "Main Number",
+                                    "Number": "7032345678"
+                                },
+                                {
+                                    "Name": "Pauline - DON",
+                                    "Number": "7032345678"
+                                }
+                            ],
+                        "OTCs": 
+                            [],
+                        "POS": 
+                        [
+                            "Email Eddie @Eddie.Hirschman@cedarthing.com",
+                            "As400 Price is Not acceptable"
+                        ]
+                    },
+                    {
+                        "Name": "Canterbury",
+                        "Number": "316",
+                        "Code": "CANTR",
+                        "Info": "",
+                        "Contacts": 
+                            [
+                                {
+                                    "Name": "Main Number",
+                                    "Number": "7035667834"
+                                },
+                                {
+                                    "Name": "John - DON",
+                                    "Number": "3011234567"
+                                }
+                            ],
+                        "OTCs": 
+                            [
+                                "ASPIRIN 81 MG CHEWABLE TABLET",
+                                "ASPIRIN EC 81 MG TABLET",
+                                "DOCUSATE 100MG SOFTGEL",
+                                "Lidocaine 4% Cream",
+                                "MAGNESIUM OXIDE 400MG TABLET",
+                                "MELATONIN 3MG TABLET",
+                                "MELATONIN 5MG TABLET",
+                                "Mucinex 600mg ER Tablet",
+                                "POLYETHYLENE GLYCOL 3350 POWDER",
+                                "Calazime Paste",
+                                "VITAMIN B-1 100MG TABLET",
+                                "VITAMIN C 500MG TABLET",
+                                "ZINC SULFATE 220MG CAPSULE"
+                            ],
+                        "POS": 
+                            [
+                                "Email Eddie @Eddie.Hirschman@cedarthing.com",
+                                "As400 Price is Not acceptable",
+                                "Pharmastar number is #111-111-1111"
+                            ]
+                    }
+                ]
+
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code": "TRIO",
+                "Info":"Do not send any OTCs for these facilities.",
+                "Facilities":[
+                    {
+                        "Name": "Fredericksberg",
+                        "Number": "300",
+                        "Code": "FSNF",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },
+                    {
+                        "Name": "Rose HIll",
+                        "Number": "301",
+                        "Code": "ROSE",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    }
+                ]
+
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code":"AMH",
+                "Info":"This is a placeholder message to be replaced with Corporation specific information. AMH",
+                "Facilities":
+                [
+                    {
+                        "Name": "Leesburg",
+                        "Number": "450",
+                        "Code": "HLEES",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": ["Tylenol","Miralax"],
+                        "POS": ["Override any OTC block unless on OTC list"]
+                    },
+                    {
+                        "Name": "King George",
+                        "Number": "451",
+                        "Code": "HKING",
+                        "Info": "Do not send any OTCs for this facility.",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },
+                    {
+                        "Name": "Front Royal",
+                        "Number": "452",
+                        "Code": "HROYA",
+                        "Info": "Do not send any OTCs for this facility.",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    }
+                ]
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code":"A1S",
+                "Info":"This is a placeholder message to be replaced with Corporation specific information. A1S",
+                "Facilities":
+                [
+                    {
+                        "Name": "Avenues",
+                        "Number": "450",
+                        "Code": "HLEES",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": [
+                            "Attempt to dispense entirety of all scripts",
+                            "Do not send medication if insurance rejects"
+                        ]
+                    }
+                ]
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code":"GTR",
+                "Info":"This is a placeholder message to be replaced with Corporation specific information. GTR",
+                "Facilities":
+                [
+                    {
+                        "Name": "Loudoun",
+                        "Number": "358",
+                        "Code": "LOUDN",
+                        "Info": "Do not dispense any OTCs unless covered by insurance",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": ["Override any OTC block unless on OTC list"]
+                    },
+                    {
+                        "Name": "Green Acres",
+                        "Number": "381",
+                        "Code": "GANR",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    }
+                ]
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code":"SNR",
+                "Info":"This is a placeholder message to be replaced with Corporation specific information. SNR",
+                "Facilities":
+                [
+                    {
+                        "Name": "The Jefferson - SNF",
+                        "Number": "450",
+                        "Code": "THEJE",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },{
+                        "Name": "The Jefferson - ALF",
+                        "Number": "451",
+                        "Code": "TJALF",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },{
+                        "Name": "The Fairfax - SNF",
+                        "Number": "423",
+                        "Code": "BWHAF",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },{
+                        "Name": "The Fairfax - ALF",
+                        "Number": "424",
+                        "Code": "BELFR",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },{
+                        "Name": "Sunrise - ValueMed",
+                        "Number": "427",
+                        "Code": "SONAE",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    },{
+                        "Name": "Kenilworth - ValueMed",
+                        "Number": "444",
+                        "Code": "KENIL",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    }
+                ]
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code":"RCA",
+                "Info":"This is a placeholder message to be replaced with Corporation specific information. RCA",
+                "Facilities":
+                [
+                    {
+                        "Name": "Capital Region",
+                        "Number": "312",
+                        "Code": "MARYL",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": [
+                            "Send a 5-day supply if claim denied"
+                        ]
+                    },{
+                        "Name": "Brace Bridge",
+                        "Number": "319",
+                        "Code": "BRACE",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": [
+                            "Send a 5-day supply if claim denied"
+                        ]
+                    }
+                ]
+            }
+    },
+    {
+        "Corporation":
+            {
+                "Code":"M1S",
+                "Info":"I forgot Mainspring's Code",
+                "Facilities":
+                [
+                    {
+                        "Name": "Mainspring",
+                        "Number": "361",
+                        "Code": "MNRCR",
+                        "Info": "",
+                        "Contacts": [],
+                        "OTCs": [],
+                        "POS": []
+                    }
+                ]
+            }
+    }
+]
