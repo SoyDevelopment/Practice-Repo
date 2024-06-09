@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { exit }  from '@tauri-apps/api/app';
+import { exit }  from '@tauri-apps/api/process';
 
 const TitleBar = () => {
   const handleCloseClick = async () => {
