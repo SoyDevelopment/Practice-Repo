@@ -12,7 +12,7 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": true
     },
     "bundle": {
       "active": true,
@@ -59,7 +59,11 @@
         "height": 800,
         "resizable": false,
         "title": "OE Guide",
-        "width": 1200
+        "width": 1200,
+        "maximizable": false,
+        "minimizable": true,
+        "decorations": false,
+        "contentProtected": true
       }
     ]
   }
