@@ -11,7 +11,9 @@ const TitleBar = () => {
   };
 
   return (
-    <button onClick={handleCloseClick}>Close App</button>
+    <>
+        <button className='bg-[#8C1C13] hover:bg-[#BF4342] text-white' onClick={handleCloseClick}>Close App</button>
+    </>
   );
 };
 
