@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      selectors: {
+        '.no-select': {
+          '-webkit-user-select': 'none',
+          '-moz-user-select': 'none',
+          'user-select': 'none',
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

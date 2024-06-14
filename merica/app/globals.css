@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.nav-title {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
