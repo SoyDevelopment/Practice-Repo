@@ -65,7 +65,7 @@
         "minimizable": true,
         "decorations": false,
         "contentProtected": true,
-        "transparent": false
+        "transparent": true
       }
     ]
   }
