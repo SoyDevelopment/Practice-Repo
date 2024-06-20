@@ -20,11 +20,11 @@ const CorporationSection = () => {
     const filterCorporations = Accounts.filter( (corporation) => corporation.Code.includes(tag))
   
     return (
-    <>
-        <h2 className='text-center text-4xl font-bold text-white flex flex-row justify-center items-center'>
+    <div className="no-scrollbar overflow-auto">
+        <h2 className='text-center text-4xl font-bold text-white flex flex-row justify-center items-center no-select'>
             Our Accounts
         </h2>
-        <div className="text-white flex flex-row justify-center items-center gap-2 py-6" >
+        <div className="text-white flex flex-row justify-center items-center gap-2 py-6 no-select" >
             {
                 Accounts.map( (corporation) => <CorporationTag
                     key = {corporation.Code} 
@@ -33,19 +33,19 @@ const CorporationSection = () => {
                 />)
             }
         </div>
-        <p className='text-center text-red-400'>
+        <p className='text-center text-red-400 no-select'>
             {
                 tag === "All" 
                 ? "Please Select a Corporation Code above for a list of their facilities and rules" 
                 : filterCorporations.map( (corp) => corp.Info )
             }
         </p>
-        <div className='flex flex-row justify-center items-center'>
+        <div className='flex flex-row justify-center items-center no-select'>
             {
                 filterCorporations.map( (corp) => <Corporation key ={corp.Code} facilities= {corp} />)
             }
         </div>
-    </>
+    </div>
   )
 }
 

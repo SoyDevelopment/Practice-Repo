@@ -1,8 +1,7 @@
 "use client"
 import React from 'react';
-import { exit }  from '@tauri-apps/api/process';
-import { appWindow } from '@tauri-apps/api/window';
-
+import { exit } from '@tauri-apps/api/process';
+import { appWindow, LogicalPosition } from '@tauri-apps/api/window';
 
 const TitleBar = () => {
     const [isDragging, setIsDragging] = React.useState(false);
@@ -18,7 +17,7 @@ const TitleBar = () => {
     };
   
     const handleMouseUp = () => {
-        console.log("Cancel Drag")
+      console.log("Cancel Drag")
       setIsDragging(false);
     };
   
@@ -31,7 +30,7 @@ const TitleBar = () => {
     };
   
     return (
-      <div className="flex nav-title cursor-default justify-end select-none fixed top-0 left-0 right-0 z-50 text-white rounded-lg" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
+      <div data-tauri-drag-region className="flex nav-title cursor-default justify-end select-none fixed top-0 left-0 right-0 z-50 text-white rounded-lg">
         <span className='full-width-span text-center' unselectable='on'>OE Guide</span>
         <button className='bg-slate-700 hover:bg-slate-500 px-3 py-1' onClick={() => appWindow.minimize()}>-</button>
         <button className='bg-[#8C1C13] hover:bg-[#BF4342] px-3 py-1' onClick={() => exit()}>X</button>

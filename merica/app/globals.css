@@ -24,6 +24,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  border-radius: 10px;
+  overflow: auto; /* Ensure scrolling is enabled */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  overflow: auto; /* Ensure scrolling is enabled */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;  /* Safari and Chrome */
+  height: 0; /* Safari and Chrome */
 }
 
 @layer utilities {
@@ -33,7 +46,16 @@ body {
 }
 
 .nav-title {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  -webkit-app-region: drag; /* Makes the window draggable */
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
